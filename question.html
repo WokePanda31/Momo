@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5 Crore Jeet Gaye!</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <style>
+            * { margin: 0; padding: 0; }
+            
+            html { 
+                background: url("Pictures/friends.jfif") no-repeat center center fixed; 
+                opacity: 75%;
+                background-color: #345856;
+                -webkit-background-size: contain;
+                -moz-background-size: contain;
+                -o-background-size: contain;
+                background-size: contain;
+            }
+            #page-wrap { width: 700px; margin: 30px auto; padding: 20px;}
+            p { text-align:center; font: 25px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }	
+            
+        </style>
+    </head>
+    <body>
+        <div id="page-wrap">
+            <p><br> Tap <br> Tap <br></p>
+            <img id="GIF" src="Gifs/1.gif" class="center">
+        </div>
+        <br>
+      
+    </body>
+    
+    <script lang="javascript">
+        var counter = 1;
+        var imTag = document.getElementById("GIF");
+        imTag.addEventListener("click", function (event){
+        counter >= 5 ? alert("You Must reply with a GIF on Whatsapp!") : counter++; 
+        event.target.src = "Gifs/"+counter+".gif";
+    });
+    
+    </script>
+
+</html>
